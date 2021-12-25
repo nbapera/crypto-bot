@@ -1,6 +1,5 @@
 import { Client, MessageEmbed } from "discord.js";
 import config from '../config.json'
-import axios from 'axios';
 
 const embed = new MessageEmbed()
 	.setColor('#a368dd')
@@ -9,6 +8,7 @@ const embed = new MessageEmbed()
 		{ name: '>help', value: 'Prints out this message :rocket:', },
         { name: '>ping', value: 'Checks if the API is live :green_circle: ' },
         { name: '>trending', value: 'Prints out trending coins :fire: ' },
+        { name: '>bitcoin', value: 'Prints out the current price of bitcoin in USD :coin: ' },
         )
 
 export default function getHelp(client: Client)
