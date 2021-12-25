@@ -12,6 +12,7 @@ export default function getTrending(client: Client)
         if (message.content == `${config.prefix}trending`) {
             axios.get('https://api.coingecko.com/api/v3/search/trending')
             .then(resp => {
+                embed.fields = []
                 resp.data.coins.map(coin => embed.addField(coin.item.name, 
                     `PRICE :money_with_wings: : **${coin.item.price_btc}** BTC :coin:` ))
                 message.channel.send({embeds: [embed]})

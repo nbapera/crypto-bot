@@ -8,7 +8,6 @@ const client = new Client({intents: ['GUILD_MESSAGES', 'GUILD_MESSAGE_REACTIONS'
 client.on("ready", () => {
     console.log("[+] Crypto started");
 })
-
 commands(client)
 
 client.login(`${config.token}`);

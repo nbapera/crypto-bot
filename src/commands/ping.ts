@@ -8,7 +8,7 @@ const embed = new MessageEmbed()
 	.addFields(
 		{ name: 'BOT', value: '**LIVE**  :green_circle:' },
 		{ name: 'API', value: '**LIVE**  :green_circle:' },
-        {name: 'DONATE :moneybag:', value: '**4A1fuTbeX51cYdmUXXzoYp9ors2kqKsvpZytGxNEk9hQXAG5KdFzYUwit5Tn7a2FStd1cAfy9rbBP87sdjrUwPrbT9zQ8z4**'}
+        {name: 'DONATE :moneybag:', value: '**3MMKHXPQrGHEsmdHaAGD59FWhKFGeUsAxV**    *BTC*  :coin:'}
         )
 
 export default function statusPing(client: Client)
